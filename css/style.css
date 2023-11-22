@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: conic-gradient(silver 30%, rgb(105, 103, 103) 50%, darkgrey 30%);
+}
+.container {
+    background: linear-gradient(silver, grey, rgb(216, 216, 216));
+    padding: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+input {
+    padding: 5px;
+    border: 10px;
+    font-size: 1rem;
+}
+.output {
+    margin-top: 30px;
+    padding: 10px;
+    border-bottom: 2.5px solid black;
+    font-size: 1.1rem;
+}
+button {
+    padding: 3px;
+    border-radius: 10px;
+}
