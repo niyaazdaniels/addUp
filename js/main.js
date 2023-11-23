@@ -1,12 +1,18 @@
-let input = document.querySelector('#input');
-let add = document.querySelector("#add");
-let btnAddUp = document.querySelector('#addUp').addEventListener('click', addUpValue);
-let output = document.querySelector('#output');
+function calculateSum(...numbers) {
+    if (numbers.length === 0) {
+      return 'Provide only numbers';
+    }
+    let sum = numbers.reduce((acc, num) => {
+      return acc + (typeof num === 'number' ? num : 0);
+    }, 0);
 
-// function addUpValue(){
-//     output.innerText = "Added Up Value " + eval(input.value + add.value);
-// }
-function addUpValue(){
-    let answer = parseInt(input.value) + parseInt(add.value);
-    output.innerText = 'Added Up Value ' + answer;
-}
+    return sum;
+  }
+  document.getElementById('calculateButton').addEventListener('click', function() {
+    displaySum(calculateSum(41, 65, 23, 48, 'five'));
+  });
+
+  function displaySum(sum) {
+    let resultElement = document.getElementById('result');
+    resultElement.innerHTML = typeof sum === 'number' ? 'Sum: ' + sum : sum;
+  }
