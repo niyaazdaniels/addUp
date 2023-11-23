@@ -16,19 +16,20 @@ body {
     text-align: center;
     font-size: 1.5rem;
     border-radius: 10px;
+    height: 280px;
 }
-input {
-    padding: 5px;
-    border: 10px;
-    font-size: 1rem;
-}
-.output {
+
+#result {
     margin-top: 30px;
     padding: 10px;
     border-bottom: 2.5px solid black;
     font-size: 1.1rem;
 }
 button {
+    margin-top: 30px;
     padding: 3px;
     border-radius: 10px;
+}
+#numbers {
+    margin-top: 30px;
 }
